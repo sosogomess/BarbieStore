@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #faf2f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ce336f;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    width: 4rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Estilo para as imagens da navegação */
+.nav img {
+    height: 2rem;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.content {
+    flex: 1; /* Faz o conteúdo ocupar o máximo possível do espaço, empurrando o footer para o final */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* SEÇÃO CARRINHO */
+.carrinho-container {
+    max-width: 600px;
+    width: 100%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #da4e87;
+    margin-bottom: 1rem;
+}
+
+.carrinho-itens {
+    padding: 1rem;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* BOTÃO */
+.btn {
+    padding: 0.8rem;
+    background-color: #ce336f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #da4e87;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background-color: #ce336f;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: auto; /* Faz o footer sempre ficar no final */
+}
+
+.logo-footer img {
+    width: 5rem;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .carrinho-container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 3rem;
+    }
+
+    .nav {
+        gap: 0.5rem;
+    }
+
+    .links {
+        font-size: 1rem;
+    }
+
+    .carrinho-container {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .btn {
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+}

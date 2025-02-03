@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #faf2f6;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ce336f;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    width: 4rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.nav img {
+    height: 2rem;
+}
+
+.contato-container {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #da4e87;
+    margin-bottom: 1rem;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #da4e87;
+    box-shadow: 0px 0px 5px rgba(218, 78, 135, 0.5);
+}
+
+.btn {
+    padding: 0.8rem;
+    background-color: #ce336f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #da4e87;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ce336f;
+    color: white;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.logo-footer img {
+    width: 5rem;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .contato-container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    input, textarea {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 3rem;
+    }
+
+    .nav {
+        gap: 0.5rem;
+    }
+
+    .links {
+        font-size: 1rem;
+    }
+
+    .contato-container {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    input, textarea {
+        font-size: 0.85rem;
+        padding: 0.7rem;
+    }
+
+    .btn {
+        font-size: 0.85rem;
+        padding: 0.5rem;
+    }
+
+    footer {
+        padding: 1.5rem;
+    }
+}
