@@ -35,7 +35,7 @@
             <label for="mensagem">Mensagem:</label>
             <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
 
-            <button type="submit" class="btn">Enviar</button>
+            <button class="btn" onclick="contato()">Enviar</button>
         </form>
     </section>
 
@@ -45,6 +45,12 @@
         </div>
     </footer>
 
+    <script>
+        function contato() {
+            alert("Mensagem enviada com sucesso! 🎉 Obrigado por entrar em contato com a Barbie Store!");
+        }
+    </script>
+    
 </body>
 </html>
 
